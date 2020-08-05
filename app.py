@@ -39,7 +39,7 @@ def main():
     st.title("Download images to test:")
     if st.button(" 👉HERE👈"):
         download_img()
-    st.title("If you got the image lets start begin🥳.")
+    st.title("If you got the image lets begin🥳.")
     st.info( " 👇 UPLOAD YOUR SUDOKU IMAGE HERE 👇")
     st.set_option('deprecation.showfileUploaderEncoding', False)
     image_file = st.file_uploader("upload",type=['jpeg', 'png', 'jpg', 'webp'])
@@ -52,7 +52,7 @@ def main():
             
             st.warning(" ❗️ please consider the following ❗️ ")
             st.image('static/Red.jpg' ,width = 100,caption = "Digits detected from the board")
-            st.image('static/Blue.jpg',width = 100 ,caption = "Digits to be filled on board")
+            st.image('static/Blue.jpg',width = 100 ,caption = "Digits to be fill on board")
             # ACTUAL SOLVING 
             with st.spinner("Doing the hardowrk🔨🔨🔨"):
                 model = load_model('digit.h5')
