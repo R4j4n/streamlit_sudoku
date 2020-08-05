@@ -42,6 +42,7 @@ if choice == "SOLVE":
     
     # You can specify more file types below if you want
     st.info( " 👇 UPLOAD YOUR SUDOKU IMAGE HERE 👇")
+    st.set_option('deprecation.showfileUploaderEncoding', False)
     image_file = st.file_uploader("upload",type=['jpeg', 'png', 'jpg', 'webp'])
 
     if image_file is not None:
