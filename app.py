@@ -50,9 +50,9 @@ def main():
 
         if st.button("🔧🔧SOLVE🔧🔧"):
             
-            st.warning(" ❗️ please consider the following ❗️ ")
-            st.image('static/Red.jpg' ,width = 100,caption = "Digits detected from the board")
-            st.image('static/Blue.jpg',width = 100 ,caption = "Digits to be fill on board")
+            st.warning(" ❗️ please consider the following exmaples ❗️ ")
+            st.image('static/Red.jpg' ,width = 100,caption = "Red digit indicates digits detected from board")
+            st.image('static/Blue.jpg',width = 100 ,caption = "Blue digit indicates the digits to be fill on board")
             # ACTUAL SOLVING 
             with st.spinner("Doing the hardowrk🔨🔨🔨"):
                 model = load_model('digit.h5')
