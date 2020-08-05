@@ -21,17 +21,17 @@ def download_img():
 
 def main():
     st.title("🔥SUDOKU SOLVER🔥") 
-    st.write("Solving Sudoku form images using ImageProcessing,DeepLearning and Backtracking ")
+    st.write("Solving Sudoku form images using ImageProcessing , DeepLearning and Backtracking ")
     st.write( "How to use it ? 🤔 ")
-    st.write("Take photo of Sudoku gird from newspaper,book or whatever you wish and upload it below to solve it or use the images given below for testing purpose .Don't need to worry about prespective of the gird.")
+    st.write("Take photo of Sudoku gird from newspaper,book or whatever you wish and upload it below to solve it or use the images given below for testing purpose.You don't need to worry about prespective of the gird.")
     st.image('static/AI.png',width = 600)
     st.sidebar.title("how it works?🤔")
     st.sidebar.text("1.First the input image is converted into threshold image.")
-    st.sidebar.text("2.Find contours with in image and take the biggest square contour.")
+    st.sidebar.text("2.Find contours within image and take the biggest square contour from the image.")
     st.sidebar.text("3.Get perspective transform biggest square contour and divide the wrapped img into 81 cell.")
-    st.sidebar.text("4.For each cell find if is contains digit or not. if it contains digit then preprocess the digit and center the digit in the cell.")
+    st.sidebar.text("4.For each cell find if it contains digit or not. if it contains digit then process the cell and center the digit in the cell and do other necessary preprocessing.")
     st.sidebar.text("5.Using NeuralNetworks helps in predicting the digit in the cells.")
-    st.sidebar.text("6.Using Backtracking helps to solve the sudoku and display the result")
+    st.sidebar.text("6.Using Backtracking solve the sudoku and display the result")
     st.sidebar.title("FOLLOW ME :sunglasses: :")
     url = 'https://www.facebook.com/R1j1n'
     if st.sidebar.button('Facebook'):
