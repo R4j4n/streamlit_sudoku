@@ -67,7 +67,8 @@ def main():
                     crop = crop_tile(tile)
                     count_white_pixles = cv2.countNonZero(crop)
                     if count_white_pixles > 150 :
-                        img = cv2.resize(crop,(28,28))
+                        centered_Text = get_text_center(crop)
+                        img = cv2.resize(centered_Text,(28,28))
                         img = img.reshape((1,28,28,1))
                         x = img.astype('float32')/255
                         result = model.predict(x)
